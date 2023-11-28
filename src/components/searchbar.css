@@ -1,0 +1,277 @@
+form {
+
+  border-radius: 10px;
+  margin: 5rem auto;
+  max-width: auto;
+  /* width: 70rem; */
+  padding: 2rem;
+  height: 40%;
+  background-color: #f0f6ff;
+}
+
+.input-top {
+ 
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  justify-content: center;
+ 
+}
+
+.input-top .input-top-element,
+.input-bottom-element {
+ 
+  width: 100%;
+
+  border: none;
+  padding: 10px 25px;
+}
+
+form label {
+ 
+}
+
+.input-top div {
+}
+
+.input-top input,
+select {
+  width: 100%;
+  max-width: 500px;
+  border: none;
+  padding: 0.4rem 0;
+  border-radius: 5px;
+  margin: 1rem 0;
+
+
+}
+
+.input-bottom {
+  
+
+  display: grid;
+
+ 
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: center;
+
+
+  
+}
+
+.input-top label {
+ 
+  display: block;
+}
+
+.input-bottom-inputs input {
+ 
+}
+
+.select-price {
+  /* margin-right: 1rem; */
+  display: inline-flex;
+  flex-direction: column;
+  /* grid-template-columns: 200px 200px; */
+  /* background-color: red; */
+  /* width: 17rem; */
+}
+
+.select-price input {
+  /* display: block; */
+}
+
+.select-price label {
+  /* display: inline-flex; */
+  display: inline;
+  /* background-color: yellow; */
+  font-size: 1rem;
+}
+
+.select-price input[type="range"] {
+  /* width: 250px; */
+}
+
+.checkbox-container {
+  display: grid;
+  justify-content: center;
+
+  height: 50px;
+  /* background-color: yellowgreen; */
+  /* width: 200px; */
+}
+
+.checkbox-container input[type="checkbox"] {
+  border-radius: 15px;
+
+  /* display: grid;
+   grid-template-columns: 2em auto;
+   gap: 0.9em; */
+}
+
+.select-price label {
+  /* margin: 0.5rem 3rem; */
+}
+
+.select-price-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-label {
+  font-weight: 600;
+}
+
+.input-bottom-checkbox {
+  justify-content: center;
+}
+
+#nember-label {
+}
+
+.input-bottom-button {
+  line-height: 7;
+}
+
+.input-bottom-button button {
+  /* margin: 0 1rem; */
+
+  padding: 0.3rem;
+  border: none;
+  width: 222px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+#search-id {
+  background-color: #c149ad;
+  color: #fff;
+}
+
+#search-id:hover {
+   background-color: #7d3a72; 
+   transition: 0.4s ease 0s; 
+}
+
+#cancle-id {
+  background-color: #057aff;
+  color: #fff;
+}
+
+#cancle-id:hover {
+  background-color: #2b4e75;
+  transition: 0.4s ease 0s;
+}
+
+/*dark theme*/
+
+.dark-form{
+background: #181920;
+}
+
+.input-selecet-dark{
+  background: #272935;
+  color:#fff;
+}
+#cancle-id-dark-theme{
+  background: #ffb86b !important;
+}
+
+#cancle-id-dark-theme:hover{
+   background: #b68755 !important;
+   transition: 0.4s ease 0s;
+}
+#search-id-dark-theme{
+  color:black !important;  
+  background-color: #ff7ac6;
+ 
+}
+
+
+#search-id-dark-theme:hover {
+   background-color: #7d3a72; 
+   transition: 0.4s ease 0s; 
+}
+/*dark theme*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .input-top {
+    /* grid-template-columns: auto auto; */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .input-bottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  form {
+    /* background-color: red; */
+  }
+
+  .input-top,
+  .input-bottom {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .input-bottom-button button {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+/* @media (min-width:481px) and (max-width:623px) {
+
+    .input-top,
+    .input-bottom {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+
+
+    }
+
+    .input-bottom-button button {
+
+       
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .input-bottom-button {
+        margin: 0 auto;
+    }
+} */
+
+@media (min-width: 482px) and (max-width: 669px) {
+  .input-top {
+    /* grid-template-columns: auto auto; */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .input-bottom-button button {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .input-bottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 670px) and (max-width: 765px) {
+  .input-top {
+    /* grid-template-columns: auto auto; */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .input-bottom-button {
+    margin: 1rem auto;
+  }
+
+  .input-bottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

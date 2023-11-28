@@ -1,0 +1,19 @@
+.about-container{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 8rem;
+}
+.about-text{
+    width: 500px;
+    background: red;
+    padding: 1rem;
+    height: 200px;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}

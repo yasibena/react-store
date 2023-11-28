@@ -1,0 +1,116 @@
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+section.all-products-container a, Link {
+  text-decoration: none;
+  color:#1b2330;
+}
+
+.all-products-container {
+  margin-top: 4rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* row style */
+.all-products-container-row {
+  grid-template-columns: repeat(1, 100%);
+}
+
+hr {
+  /* width: 78%; */
+  margin: auto;
+  margin-top: 4rem;
+  border: 1px solid rgba(0, 0, 0, 0.088);
+}
+
+.all-product-number {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  /* width: 75rem; */
+}
+
+.all-product-number span {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.all-product-number svg {
+  margin: 0 0.5rem;
+}
+
+.active-show {
+  background-color: rgba(134, 134, 216, 0.629);
+  border-radius: 50%;
+  display: inline-flex;
+  padding: 10px 2px;
+  justify-content: center;
+  align-items: center;
+  background-color: #057aff;
+  color: #d7e0ea;
+}
+
+.all-product-number svg {
+}
+.svg-container svg:hover {
+  border-radius: 50%;
+  background-color: #becbd975;
+}
+.link-each-product{
+  text-decoration: none;
+  color:#1b2330;
+}
+
+/*dark theme*/
+
+.all-products-container-row a{
+text-decoration: none;
+/* color:#1b2330; */
+/* color:#fff; */
+}
+
+.active-show-dark-theme{
+  background: #ff7ac6;
+}
+
+.all-products-container-row-dark-theme{
+  /* color: #fff; */
+}
+
+.a-dark-theme{
+  color:#fff !important ;
+}
+
+
+
+
+/*dark theme*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .all-products-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .all-products-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .all-products-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
