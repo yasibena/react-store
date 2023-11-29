@@ -3,7 +3,7 @@ import axios from 'axios'
 import { productReducer, reducer } from '../reducer/reducer'
 import products from '../info'
 
-const url = 'https://mocki.io/v1/517b94af-cd9e-4999-8357-0bbe1bbeefa4'
+
 const AppContext = React.createContext()
 
 
