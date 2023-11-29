@@ -10,11 +10,7 @@ import { useThemeContext } from "../context/ThemContext";
 
 
 export default function Home() {
-  // const filteredItem= cart.filter(item=>item.featured===true).map(filteredItem=>{
-  //  return{
 
-  //  }
-  // })
 
   const {
     state: { products },
