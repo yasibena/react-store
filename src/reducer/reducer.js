@@ -15,15 +15,7 @@ export const reducer = (state, action) => {
     });
 
     const indexOfArr = state.cart.indexOf(findArrDelete);
-    console.log(indexOfArr);
-    // const filteredarr=state.cart.filter(e=> (e.id==findArrDelete.id && e.colors==findArrDelete.colors))
-    // console.log(filteredarr,'filteredarr');
-    // console.log(
-    //   state.cart.filter(function (item) {
-    //     return item !== findArrDelete;
-    //   }),
-    //   "d",
-    // );
+    
     return {
       ...state,
 
@@ -115,16 +107,7 @@ export const reducer = (state, action) => {
       }
     });
 
-    // return {
-    //   ...state,
-    //     cart: state.cart.filter((e) =>
-    //       e.id === action.payload.item.id && e.colors === action.payload.item.colors
-    //         ? e.amount=newAmount
-    //         : e.amount,
-    //     ),
-
-    // };
-
+  
     return {
       ...state,
       cart: changeAmountArr,
