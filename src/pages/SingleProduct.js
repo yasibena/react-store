@@ -52,13 +52,7 @@ export default function SingleProduct() {
   const theme = useThemeContext();
   const darkMode = theme.darkMode;
 
-  // changeAmount=(id)=>{
 
-  //   setSelectedAmount(event.target.value)
-
-  //   dispatch({type:'CHANGE_AMOUNT',payload:{id,selectedAmount}})
-
-  // }
 
   function colorChange(event) {
     setSelectedColor(event.target.style.backgroundColor);
