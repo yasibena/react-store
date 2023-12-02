@@ -8,6 +8,8 @@ main {
 section.all-products-container a, Link {
   text-decoration: none;
   color:#1b2330;
+  display: block;
+    margin: auto;
 }
 
 .all-products-container {
@@ -93,10 +95,11 @@ text-decoration: none;
 
 /*dark theme*/
 
+/* @media (min-width: 481px) and (max-width: 767px) { */
 @media screen and (max-width: 767px) {
   .all-products-container {
     display: grid;
-    background:red;
+    background-color: red;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
