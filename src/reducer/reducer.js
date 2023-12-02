@@ -83,16 +83,7 @@ export const reducer = (state, action) => {
     //    console.log(action.payload.selectedAmount,action.payload.item.id);
     // console.log(state.cart, "cart in reducer");
     let newAmount = parseInt(action.payload.newTarget);
-    // console.log(newAmount, "mewamoutnt2");
-    // if (
-    //   state.cart.some(
-    //     (e) =>
-    //       e.id === action.payload.item.id &&
-    //       e.colors === action.payload.item.colors,
-    //   )
-    // ) {
-
-    // }
+   
 
     const changeAmountArr = state.cart.map((e) => {
       if (
@@ -117,10 +108,6 @@ export const reducer = (state, action) => {
   if (action.type === "CART_AMOUNT") {
     
    
-    // return {
-    //   ...state,
-    //   allAmount: sumWithInitial,
-    // };
   }
 
   return state;
