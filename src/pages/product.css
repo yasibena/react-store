@@ -93,9 +93,10 @@ text-decoration: none;
 
 /*dark theme*/
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .all-products-container {
     display: grid;
+    background:red;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
