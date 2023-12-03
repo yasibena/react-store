@@ -23,6 +23,7 @@ article div {
   align-items: center;
   margin: 2rem auto;
   width: 100%;
+  color:black;
 }
 .article-row-img {
   width: auto;
