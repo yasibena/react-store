@@ -80,7 +80,16 @@
   background: #040404
   }
   
-  
+  @media screen and (max-width: 767px){
+ 
+.pagination-container{
+    margin: auto;
+    margin-bottom: 3rem;
+
+  }
+
+
+  }
   
   
   
