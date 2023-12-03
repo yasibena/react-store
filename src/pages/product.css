@@ -99,7 +99,7 @@ text-decoration: none;
 @media screen and (max-width: 767px) {
   .all-products-container {
     display: grid;
-    background-color: red;
+    
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
